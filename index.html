@@ -29,7 +29,7 @@
   </style>
 </head>
 <body class="font-sora">
-    <header class="w-full h-[1210px] bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] container mx-auto">
+    <header class="w-full h-auto bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] container mx-auto">
 <!-- hero section -->
       <section class="sm:container mx-5 px-10">
 <!-- navbar -->
@@ -37,11 +37,11 @@
         <div class="navbar bg-base-100 container mx-auto">
         <div class="navbar-start justify-start">
       <div>
-        <img class="hidden md:flex mt-3" src="images/logo-header.png" alt="">
+        <img class="hidden md:flex md:w-full" src="images/logo-header.png" alt="">
       </div>
         </div>
         <div class="navbar-center hidden lg:flex text-xl">
-    <ul class="menu menu-horizontal px-1">
+       <ul class="menu menu-horizontal px-1">
       <li><a>Product</a></li>
       <li><a>Services</a></li>
       <li><a>Contact Us</a></li>
@@ -59,7 +59,8 @@
         </nav>
         <div class="flex items-center justify-around w-[400px]">
           <div class="mb-5 lg:hidden">
-            <img src="images/logo-footer.png" alt="">
+            <img src="images/logo-footer.png" alt=""
+            class="w-full">
           </div>
           <!-- <div class="w-[200px]"> -->
             <div class="lg:hidden" ><i class="fa-solid  fa-bars"></i></div>
@@ -83,7 +84,7 @@
           </div>
         </div>
         <!-- hero image -->
-        <div class="w-full h-[830px] content-center">
+        <div class="w-full h-auto md:h-[825px] container mx-auto">
           <img src="images/hero-vegetables.png" alt="">
         </div>
       <!-- </section> -->
@@ -93,8 +94,9 @@
        <section class="container mx-auto">
         <div class="">
           <h3 class="font-sora text-btn-color text-2xl my-5 font-semibold">Services </h3></div>
-        <div class="flex flex-col mb-20 md:flex-row gap-4 md:gap-8 items-center md:items-start ">
-          <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+        <div class="grid grid-cols-1 mb-20 container mx-auto md:grid-cols-3 gap-4 md:gap-8 items-center md:items-start ">
+<!-- Service 1 -->
+          <div class="card bg-[#EFEBE3]  shadow-xl">
             <div class="w-[150px] h-[150px] rounded-full bg-white mx-[110px] mt-6"><figure class="px-10 pt-10 ">
               <img
                 src="images/service.png"
@@ -106,52 +108,54 @@
               <p class="font-sora">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </div>
           </div>
-          <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+<!-- Service 2 -->
+          <div class="card bg-[#EFEBE3] shadow-xl">
             <div class="w-[150px] h-[150px] rounded-full bg-white mx-[110px] mt-6"><figure class="px-10 pt-10 ">
               <img
-                src="images/service.png"
+                src="images/delivery.png"
                 alt="Shoes"
                 class="rounded-xl " />
             </figure></div>
             <div class="card-body items-center text-center">
-              <h2 class="card-title font-sora">24/7 Services </h2>
+              <h2 class="card-title font-sora">Fast Delivery</h2>
               <p class="font-sora">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </div>
           </div>
-          <div class="card bg-[#EFEBE3] w-96 shadow-xl">
+<!-- Service 3 -->
+          <div class="card bg-[#EFEBE3] shadow-xl">
             <div class="w-[150px] h-[150px] rounded-full bg-white mx-[110px] mt-6"><figure class="px-10 pt-10 ">
               <img
-                src="images/service.png"
+                src="images/healthy.png"
                 alt="Shoes"
                 class="rounded-xl " />
             </figure></div>
             <div class="card-body items-center text-center">
-              <h2 class="card-title font-sora">24/7 Services </h2>
+              <h2 class="card-title font-sora">Healthy Products</h2>
               <p class="font-sora">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
             </div>
           </div>
         </div>
        </section>
-       <!-- popular -->
+ <!-- popular -->
         <section class="popular bg-[#EFEBE3] w-full mx-auto py-10">
           <h2 class="font-sora text-btn-color text-3xl  mx-2 pt-10 pb-3">Popular Products</h2>
-          <div class="flex mx-10 mb-10 items-center justify-center">
-            <div class="w-[424px] h-[402px] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg px-7 pt-7">
+          <div class="grid grid-cols-1 gap-4 lg:flex  mx-10 mb-10 items-center justify-center">
+            <div class="sm:w-[380px]   lg:w-[424px] lg:h-[402px] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg px-7 pt-7">
               <h3 class="font-sora text-2xl font-bold text-white pb-3">30% Off</h3>
               <p class="pb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, unde!</p>
               <button class="btn btn-ghost bg-white pb-4">Buy Now</button>
               <div class="relative w-full h-auto">
-                <img src="images/vegetable-offer.png" alt="" class="absolute -top-3 right-0 w-2/3">
+                <img src="images/vegetable-offer.png" alt="" class="w-full h-auto lg:absolute lg:-top-3 lg:right-0 lg:w-2/3">
               </div>
             </div>
-           <div class="grid grid-cols-3 md:grid .grid-cols-2">
+           <div class="grid grid-cols-2 lg:grid-cols-3 md:grid .grid-cols-2">
 <!-- 1 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl  mx-2 my-3 ">
               <div>
                 <img
                   src="images/onion.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl  mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -160,12 +164,12 @@
               </div>
             </div>
 <!-- 2 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl mx-2 my-3">
               <div>
                 <img
                   src="images/tomato.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -174,12 +178,12 @@
               </div>
             </div>
 <!-- 3 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/potato.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -188,12 +192,12 @@
               </div>
             </div>
 <!-- 4 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/tomato.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -202,12 +206,12 @@
               </div>
             </div>
 <!-- 5 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/onion.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -216,12 +220,12 @@
               </div>
             </div> 
 <!-- 6 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/tomato.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -230,12 +234,12 @@
               </div>
             </div>
 <!-- 7 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/onion.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -244,12 +248,12 @@
               </div>
             </div>
 <!-- 8 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/potato.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -258,12 +262,12 @@
               </div>
             </div>
 <!-- 9 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl w-[275px] h-[100px] mx-2 my-3">
+            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
               <div>
                 <img
                   src="images/potato.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl w-[95px] h-[80px] mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl mx-3 my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
