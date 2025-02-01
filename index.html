@@ -57,17 +57,19 @@
   </div>
   </div>
         </nav>
-        <div class="flex items-center justify-around w-[400px]">
-          <div class="mb-5 lg:hidden">
-            <img src="images/logo-footer.png" alt=""
-            class="w-full">
+        <nav class="lg:hidden">
+          <div class="flex items-center justify-around w-full">
+            <div class="mb-5 lg:hidden">
+              <img src="images/logo-footer.png" alt=""
+              class="w-full">
+            </div>
+          
+              <div class="lg:hidden" ><i class="fa-solid  fa-bars"></i></div>
           </div>
-          <!-- <div class="w-[200px]"> -->
-            <div class="lg:hidden" ><i class="fa-solid  fa-bars"></i></div>
-        </div>
-        <div class="w-[400px] lg:hidden">
-          <hr color="#179800">
-        </div>
+          <div class="w-full lg:hidden">
+            <hr color="#179800">
+          </div>
+        </nav>
         <!-- hero content -->
         <div>
           <div class="hero my-10">
@@ -137,7 +139,7 @@
         </div>
        </section>
  <!-- popular -->
-        <section class="popular bg-[#EFEBE3] w-full mx-auto py-10">
+        <section class="popular bg-[#EFEBE3] lg:w-full lg:mx-auto py-10">
           <h2 class="font-sora text-btn-color text-3xl  mx-2 pt-10 pb-3">Popular Products</h2>
           <div class="grid grid-cols-1 gap-4 lg:flex  mx-10 mb-10 items-center justify-center">
             <div class="sm:w-[380px]   lg:w-[424px] lg:h-[402px] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg px-7 pt-7">
@@ -148,14 +150,14 @@
                 <img src="images/vegetable-offer.png" alt="" class="w-full h-auto lg:absolute lg:-top-3 lg:right-0 lg:w-2/3">
               </div>
             </div>
-           <div class="grid grid-cols-2 lg:grid-cols-3 md:grid .grid-cols-2">
+           <div class="grid grid-cols-2 gap-2 lg:grid-cols-3 md:grid .grid-cols-2">
 <!-- 1 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl  mx-2 my-3 ">
+            <div class="card card-side lg:w-full bg-white shadow-xl items-center justify-start rounded-xl mx-2 my-3 ">
               <div>
                 <img
                   src="images/onion.png"
                   alt="Onion"
-                  class="bg-[#EFEBE3] rounded-xl  mx-3 my-3" />
+                  class="bg-[#EFEBE3] rounded-xl  lg:mx-3 lg:my-3" />
               </div>
               <div class="">
                 <h2 class="font-sora text-x text-yellow-400 space-x-2"><i class="fa-solid fa-star"></i><span class="text-black">4.5</span></h2>
@@ -164,7 +166,7 @@
               </div>
             </div>
 <!-- 2 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl items-center justify-start rounded-xl mx-2 my-3">
               <div>
                 <img
                   src="images/tomato.png"
@@ -178,7 +180,7 @@
               </div>
             </div>
 <!-- 3 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start  mx-2 my-3">
               <div>
                 <img
                   src="images/potato.png"
@@ -192,7 +194,7 @@
               </div>
             </div>
 <!-- 4 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start  mx-2 my-3">
               <div>
                 <img
                   src="images/tomato.png"
@@ -206,7 +208,7 @@
               </div>
             </div>
 <!-- 5 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start  mx-2 my-3">
               <div>
                 <img
                   src="images/onion.png"
@@ -220,7 +222,7 @@
               </div>
             </div> 
 <!-- 6 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start mx-2 my-3">
               <div>
                 <img
                   src="images/tomato.png"
@@ -234,7 +236,7 @@
               </div>
             </div>
 <!-- 7 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start  mx-2 my-3">
               <div>
                 <img
                   src="images/onion.png"
@@ -248,7 +250,7 @@
               </div>
             </div>
 <!-- 8 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start  mx-2 my-3">
               <div>
                 <img
                   src="images/potato.png"
@@ -262,7 +264,7 @@
               </div>
             </div>
 <!-- 9 -->
-            <div class="card card-side bg-white shadow-xl rounded-xl   mx-2 my-3">
+            <div class="card card-side lg:w-full bg-white shadow-xl rounded-xl items-center justify-start mx-2 my-3">
               <div>
                 <img
                   src="images/potato.png"
@@ -281,20 +283,24 @@
 <!-- Offer -->
         <section class="bg-white container mx-auto my-10">
           <h3 class="font-sora text-btn-color text-2xl my-5 font-semibold">Arrival & offers</h3>
-          <div class="flex gap-6">
-            <div class="flex gap-10 bg-[#115414] w-[720px] h-auto rounded-xl">
-              <div class="mx-6 w-[246px] h-[76px]"><img src="images/dawat-logo.png" alt="" class="px-3 py-5">
-                <button class="rounded-lg font-sora font-normal text-2xl bg-[#63B76D] text-white w-[334px] h-[65px] mb-4 ">Cook Exotic Dishes</button>
+          <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <div class="flex  lg:w-[600px] bg-[#115414]  h-auto rounded-xl">
+              <div class="mx-4 w-full"><img src="images/dawat-logo.png" alt="" class="px-3 py-5">
+                <button class="rounded-lg font-sora font-normal text-2xl bg-[#63B76D] text-white px-5 py-3 mb-4 ">Cook Exotic Dishes</button>
                 <h3 class="text-white text-3xl font-normal font-sora">UP to <span class="font-bold">20% OFF</span></h3></div>
-              <div><img src="images/dawat-mock-up.png" alt="" class="pt-10"></div>
+              <div class="w-full">
+                <img src="images/dawat-mock-up.png" alt="" class="pt-10">
+              </div>
             </div>
 <!-- Rice -->
-          <div class="flex bg-[#102861] w-[520px] h-auto rounded-xl">
-          <div class="mx-6 w-[246px] h-[76px]"><img src="images/india-gate-logo.png" alt="" class="px-3 py-5">
-         <button class="rounded-lg font-sora font-normal text-2xl bg-[#2A4D97] text-white w-[250px] h-[65px] mb-4 ">World's No.1 Rice</button>
+          <div class="flex lg:w-[500px] bg-[#102861] h-auto rounded-xl">
+          <div class="mx-3 w-full"><img src="images/india-gate-logo.png" alt="" class="px-3 py-5">
+         <button class="rounded-lg font-sora font-normal text-2xl bg-[#2A4D97] text-white px-3 py-3 mb-4 ">World's No.1 Rice</button>
          <h3 class="text-white text-3xl font-normal font-sora">UP to <span class="font-bold">20% OFF</span></h3></div>
-         <div><img src="images/india-gate-mock-up.png" alt="" class="pt-10"></div>
-</div>
+         <div class="w-full">
+          <img src="images/india-gate-mock-up.png" alt="" class="pt-10">
+        </div>
+        </div>
           </div>
         </section>
 <!-- Email -->
